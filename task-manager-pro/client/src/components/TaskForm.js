@@ -26,7 +26,6 @@ function TaskForm() {
         createdAt: serverTimestamp(),
         userId: currentUser.uid // This line is crucial
       });
-      console.log("Task added!");
       setTaskText('');
     } catch (error) {
       console.error("Error adding document: ", error);
